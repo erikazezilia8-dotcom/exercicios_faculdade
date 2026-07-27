@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+int main() {
+int estacionamento[4][5] = {0};
+    int opção;
+    int fileira, vaga;
+    int i, j;
+    int ocupadas, livres;
+    
+    do { //parte do menu principal
+        printf("\n || O ESTACIONAMENTO MIAUMIAU TE AGUARDA! ||\n");
+        printf("1. Ocupar Vaga\n");
+        printf("2. Consultar Disponibilidade\n");
+        printf("3. Relatorio Visual\n");
+        printf("4. Sair\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &opção);
+
+        switch(opção) {
+            case 1: //Cadastro de vagas
+                printf("\nInforme a fileira (0 a 3): "); 
+                scanf("%d", &fileira);
+
+                printf("Informe a vaga (0 a 4): ");
+                scanf("%d", &vaga);
+
+                if (fileira >= 0 && fileira < 4 && vaga >= 0 && vaga < 5) { //para verificar se a vaga existe
+
+                    if (estacionamento[fileira][vaga] == 0) { //verifica se a vaga está livre
+                        estacionamento[fileira][vaga] = 1; //marca a vaga quando ocupada
+                        printf("Vaga vazia e ocupada com sucesso!˶ᵔᵕᵔ˶\n");
+                    } else {
+                        printf("Esta vaga infelizmente já está ocupada. >﹏< \n");
+                    }
+
+                } else {
+                    printf("Esta vaga não existe! ╥﹏╥ Escolha apenas uma das opções disponíveis.\n");
+                }
+                break;
+
+            case 2: //inicializa os contadores (quais ocupadas e quais livres)
+                ocupadas = 0;
+                livres = 0;
+                  //percorre a matriz para contar as vagas
+                for(i = 0; i < 4; i++) {
+                    for(j = 0; j < 5; j++) { 
+                        if (estacionamento[i][j] == 1) { //verifica se as vagas estão ocupadas
+                            ocupadas++;
+                        } else {
+                            livres++;
+                        }
+                    }
+                }
+                //exibe o resultado da contagem
+                printf("\nTotal de vagas ocupadas: %d \n", ocupadas);
+                printf("Total de vagas livres: %d \n", livres);
+                break;
+
+            case 3: 
+                printf("\n|| MAPA DO ESTACIONAMENTO MIAUMIAU ||\n"); 
+
+                for(i = 0; i < 4; i++) { //começa na fileira 0 e ai até 3(1<4) 
+                    for(j = 0; j < 5; j++) {
+                        if (estacionamento[i][j] == 0) {
+                            printf("."); //O ponto(.) vai mostrar as vagas livres
+                        } else {
+                            printf("X"); //O (X) vai mostrar as vagas ocupadas
+                        }                        
+                    }
+                    printf("\n");
+                }
+                break;
+
+            case 4: //mensagem de encerramento
+                printf("Até a próxima! O estacionamento MIAUMIAU te agauarda ˶ᵔᵕᵔ˶\n");
+                break;
+
+            default: //caso o usuário digite algo fora do menu
+                printf("Opção invalida!╥﹏╥ Escolha apenas uma das opções disponíveis (1 ao 4) \n");
+        }
+
+    } while(opção != 4); //finaliza
+    
+    return 0;
+}
