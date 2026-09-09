@@ -12,5 +12,5 @@ Repositório destinado aos exercícios e projetos desenvolvidos durante eu tecn�
 Exercícios voltados à pratica de lógica de programação e fundamentos da linguagem C.
 ### 📊 Diagramas
 Diagramas desenvolvidos durante atividades acadêmicas para representação e modelagem de sistemas.
-## Objetivo
+## 🎯 Objetivo
 Registrar minha evolução na área de tecnologia por meio de exercícios e projetos acadêmicos, desenvolendo conhecimento em programação, análse e modelagem de sistemas, com foco no aprimoramento contínuo das minhas habilidades técnicas.
