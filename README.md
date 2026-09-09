@@ -2,15 +2,15 @@
 Repositório destinado aos exercícios e projetos desenvolvidos durante eu tecnólogo em Análise e Desenvolvimento de Sistemas.
 ## Tecnologias
 - C
+- Draw.io
 - Power BI
 - Excel
 - Git
 - GitHub
-# Áreas
-- Programação
-- Lógica de programação
-- Análise de Sistemas
-- Modelagem de sistemas
-- Análise de dados
+## 📚 Conteúdos
+### 💻 Linguagem C
+Exercícios voltados à pratica de lógica de programação e fundamentos da linguagem C.
+### 📊 Diagramas
+Diagramas desenvolvidos durante atividades acadêmicas para representação e modelagem de sistemas.
 ## Objetivo
-Registrar minha evolução na programação e organizar os projetos desenvolvidos durante o curso
+Registrar minha evolução na área de tecnologia por meio de exercícios e projetos acadêmicos, desenvolendo conhecimento em programação, análse e modelagem de sistemas, com foco no aprimoramento contínuo das minhas habilidades técnicas.
